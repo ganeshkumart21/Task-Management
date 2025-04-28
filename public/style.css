@@ -1,0 +1,345 @@
+body {
+    background-color: #e8e2e2;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0px;
+    background-image: url('/assets/images/loginbackground.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* NAVBAR */
+
+.navbar-1 {
+    background-color: #ffffff;
+    padding: 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.navbar-1 .navbar .navbar-brand {
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding: 0;
+}
+
+.navbar-1 .navbar .navbar-brand:hover {
+    color: #efefef;
+}
+
+.navbar-1 .navbar-expand-lg .navbar-nav {
+    margin: 0;
+    margin-left: auto !important;
+}
+
+
+.navbar-1 .navbar-expand-lg .navbar-nav .nav-item {
+    margin-right: 35px;
+
+}
+
+.navbar-1 .navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #e725d0;
+}
+
+.navbar-1 .navbar .navbar-nav .nav-item .nav-link {
+    color: #212121;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar-1 .navbar .navbar-toggler {
+    border: none;
+    margin-top: 0px;
+    padding: 0px;
+    font-size: 18px;
+    color: #242424;
+}
+
+.navbar-1 .navbar .btn-wrap .btn {
+    padding: 3px 14px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #e725d0;
+    color: #fff;
+}
+
+.navbar-1 .navbar .btn-wrap-1 .btn {
+    padding: 3px 14px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #cdcbcd;
+    color: #000;
+}
+
+.navbar-1 .navbar .btn-wrap .btn:hover,
+.navbar-1 .navbar .btn-wrap-1 .btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/* FOOTER */
+
+.footer {
+    background: linear-gradient(to bottom, #dc74d5, #d3435e);
+    padding: 50px 0px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer .footer_wrap p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 15px 0px;
+    color: #D2D2D2;
+}
+
+.footer .footer_wrap h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.footer .footer_wrap ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer_wrap ul li {
+    margin: 5px;
+}
+
+.footer .footer_wrap ul li a i {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.footer .quick_links {
+    margin-bottom: 12px;
+}
+
+.footer .quick_links h4,
+.footer .add_links h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer .quick_links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .quick_links ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #D2D2D2;
+    margin-bottom: 2px;
+}
+
+.footer .add_links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .add_links li {
+    display: flex;
+    align-items: baseline;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #D2D2D2;
+    margin-bottom: 8px;
+}
+
+
+.footer .add_links li a {
+
+    text-decoration: none;
+    color: #D2D2D2;
+}
+
+.footer .add_links li a i,
+.footer .add_links li i {
+    margin-right: 5px;
+}
+
+
+.b-footer {
+    background-color: #d3435e;
+    position: relative;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    /* margin: 0px 15px; */
+    cursor: pointer;
+    border-top: 1px solid transparent;
+
+}
+
+/* LOGIN  & SIGNIN*/
+
+form {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #dc74d5, #f41d44);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.login input,
+.signin input {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.login label,
+.signin label {
+    font-size: 18px;
+    color: #fff;
+}
+
+.login .f-psw {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.login .remember {
+    font-size: 15px;
+    color: #fff;
+}
+
+.login .btn {
+    /* background-color: #ed0505; */
+    background-color: #e8e2e2;
+    width: 30%;
+    padding: 5px;
+    margin-left: auto;
+    color: #000;
+    margin: 10px, 0px;
+}
+
+.login .btn:hover {
+    background-color: #ed0505;
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(33, 150, 243, 0.6);
+    cursor: pointer;
+}
+
+/* Signin-Button*/
+
+.signin .btn {
+    background-color: #e8e2e2;
+    color: #000;
+    border: none;
+    width: 100%;
+    padding: 12px 24px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.signin .btn:hover {
+    background-color: #ed0505;
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(33, 150, 243, 0.6);
+}
+
+.signin .f-psw {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.signin a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signin a:hover {
+    text-decoration: underline;
+    color: #2b9ce7;
+}
+
+/* INDEX */
+
+.index {
+    margin: 0px;
+    padding: 30px;
+    /* background-image: url('../images/index-img.jpg');
+    background-size: cover;
+    background-position: center; */
+}
+
+.index h1 {
+    color: #df1ab8;
+}
+
+.index h4 {
+    color: #dfa41a;
+}
+
+
+.index .header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* TASK */
+
+.form-wrap .text-center {
+    margin: 0px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logout-btn {
+    padding: 10px;
+    margin: 20px;
+    background-color: #e725d0;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+/* ADMIN */
+.admin {
+    margin: 0px;
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+</head>
+<body>
+    <div class="navbar-1" id="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="#"> <img src="/assets/images/task-logo-1.jpg"  width="20%" alt="logo"> </a>
+                        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Browse</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#features">AboutUs</a>
+                                </li>
+                            </ul>
+                            <div class="d-md-flex btn-wrap">
+                                <a type="button"  class="btn">Signup</a>
+                            </div>
+                            <div class="d-md-flex btn-wrap-1">
+                                <a type="button"  class="btn">Login</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-6 d-flex row justify-content-center align-items-center">
+              <div class="admin" id="admin" action="POST">
+                <h1>Welcome to the Admin Dashboard</h1>
+                <p>Here you can manage your tasks and projects efficiently.</p>
+
+                <!-- <form id="form" action="/add-user-detail" method="post">
+                    <div class="data">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+
+                        <label for="company">Company:</label>
+                        <input type="company" id="company" name="email" class="form-control" required>
+
+                        <label for="salary">Salary:</label>
+                        <input type="number" id="salary" name="salary" class="form-control">
+
+                        <label for="designation">Designation</label>
+                        <input type="text" id="designation" name="designation" class="form-control" >
+
+                        <label for="location">Location</label>
+                        <input type="text" id="location" name="location" class="form-control" >
+                    </div>
+<br>
+                    <div class="button d-flex justify-content-center align-items-center">                        
+                        <button type="submit" value="submit" class="btn btn-success">Submit</button>
+                    </div>
+
+                </form> -->
+                
+
+
+                <div class="admin-buttons d-flex justify-content-around align-content-center">
+                    <a href="#"  id="view-task-btn" class="btn btn-primary">View Task</a>                
+                    <a href="#" id="add-task-btn" class="btn btn-primary">Add Task</a>
+                    <a href="#" id="view-user-btn" class="btn btn-primary">View Users</a>
+                    <a href="#" id="add-user-detail-btn" class="btn btn-primary">Add user detail</a>
+                    <!-- <a href="#" id="update-user-btn" class="btn btn-warning">Update User</a> -->
+                    <button type="button" id="logout-btn" class="btn btn-danger">logout</button>
+              </div>
+            </div>
+        </div>
+
+        <div id="task-table-container" class="mt-4"></div>
+        <div id="user-table-container"></div>
+        <div id="add-task-container"></div>
+        <div id="add-user-container"></div>
+        <!-- <div id="update-user-container"></div> -->
+
+
+
+    </div>
+
+   <div class="footer">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-3 col-md-3 col-6">
+                    <div class="footer_wrap">
+                        <img src="/assets/images/task-logo.png" alt="f-logo" width="60%">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Eleifend diam ipsum tortor dignissim natoque erat
+                            aenean habitasse.
+                        </p>
+                        <h3>Follow Us:</h3>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="quick_links">
+                                <h4>Company</h4>
+                                <ul>
+                                    <li><a href="#Lorem ipsum.html">Home</a></li>
+                                    <li><a href="#support.html"> Features</a></li>
+                                    <li><a href="#pricing.html">About us</a></li>
+                                    <li><a href="#contact-us.html">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="quick_links">
+                                <h4>Community</h4>
+                                <ul>
+                                    <li><a href="#Loremipsum.html">Blog</a></li>
+                                    <li><a href="#support.html">Webinar</a></li>
+                                    <li><a href="#Loremipsum.html">Help</a></li>
+                                    <li><a href="#contact-us.html">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="add_links">
+                                <h4>Contact</h4>
+                                <ul>
+                                    <li><a href="#"><i class="fa-regular fa-envelope"></i> example@gmail.com</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-phone"></i> 043-45632855</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-footer p-3">
+        <div class="container-fluid">
+            <p class="d-flex justify-content-center mb-0">
+                All rights reserved by Practical Theory, Inc.
+                <script>document.write(new Date().getFullYear())</script>
+            </p>
+        </div>
+    </div>
+   
+<script>
+        //const form = document.getElementById("admin");
+        addEventListener('load', async (event) => {
+            try {
+                const res = await fetch('/check-auth');
+                const data = await res.json();
+
+                if (!data.success || data.role !== 'admin') {
+                    alert("Unauthorized access! Redirecting to user page.");
+                    window.location.href = "/login.html"; 
+                }
+            } catch (error) {
+                console.error('Auth check failed:', error);
+                window.location.href = "/login.html"; // fallback if something breaks
+            }
+        });
+
+// show view task table
+document.getElementById('view-task-btn').addEventListener('click', async () => {
+    document.getElementById('task-table-container').innerHTML = '';
+    document.getElementById('add-task-container').innerHTML = '';
+    document.getElementById('user-table-container').innerHTML = ''; 
+    try {
+        const response = await fetch('/get-task' , {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        });
+        if (!response.ok) {
+            throw new Error('Network response was not ok' + response.statusText);
+        }
+
+        const data = await response.json();
+
+        const tableContainer = document.getElementById('task-table-container');
+        
+        if (data.length === 0) {
+            tableContainer.innerHTML = "<p>No tasks found.</p>";
+            return;
+        }
+
+        let tableHTML = `
+            <div class="d-flex justify-content-end mb-2">
+            <button type="button" class="btn-close" id="close-task-table" aria-label="Close"></button>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>User_id</th>
+                        <th>Task Title</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+        `;
+
+        data.forEach((data, index) => {
+            tableHTML += `
+                <tr>
+                    <td>${index + 1}</td>
+                    <td>${data.users_id}</td>
+                    <td>${data.title}</td>
+                    <td>${data.description}</td>
+                    <td>${data.status}</td>
+                </tr>
+            `;
+        });
+
+        tableHTML += `</tbody></table>`;
+        tableContainer.innerHTML = tableHTML;
+
+        // Add this after rendering:
+        document.getElementById('close-task-table').addEventListener('click', () => {
+            tableContainer.innerHTML = ''; // Clears the table
+        });
+
+    } catch (err) {
+        console.error("Error fetching tasks:", err);
+        document.getElementById('task-table-container').innerHTML = "<p>Error loading tasks.</p>";
+    }
+});
+
+// show view user table
+document.getElementById('view-user-btn').addEventListener('click', async () => {
+    document.getElementById('task-table-container').innerHTML = '';
+    document.getElementById('add-task-container').innerHTML = '';
+    try {
+        const response = await fetch('/get-users', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        });
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+
+        const users = await response.json();
+
+        const userTableContainer = document.getElementById('user-table-container');
+        
+        if (users.length === 0) {
+            userTableContainer.innerHTML = "<p>No users found.</p>";
+            return;
+        }
+
+        let tableHTML = `
+            <div class="d-flex justify-content-end mb-3">
+            <button type="button" class="btn-close" id="close-user-table" aria-label="Close"></button>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Number</th>
+                        <th>Company</th>
+                        <th>Salary</th>
+                        <th>Designation</th>
+                        <th>Location</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+        `;
+                        
+
+        users.forEach((user, index) => {
+            tableHTML += `
+                <tr>
+                    <td>${index + 1}</td>
+                    <td>${user.name}</td>
+                    <td>${user.email}</td>
+                    <td>${user.number}</td>
+                    <td>${user.company || 'N/A'}</td>
+                    <td>${user.salary || 'N/A'}</td>
+                    <td>${user.designation || 'N/A'}</td>
+                    <td>${user.location || 'N/A'}</td>
+                </tr>
+            `;
+        });
+
+                    
+                    
+        tableHTML += `</tbody></table>`;
+        userTableContainer.innerHTML = tableHTML;
+
+        // Add this after rendering:
+        document.getElementById('close-user-table').addEventListener('click', () => {
+            userTableContainer.innerHTML = ''; // Clears the table
+        });
+
+    } catch (err) {
+        console.error("Error fetching users:", err);
+        document.getElementById('user-table-container').innerHTML = "<p>Error loading users.</p>";
+    }
+});
+
+//show add user detail form and add user to the database
+document.getElementById('add-user-detail-btn').addEventListener('click', async () => {
+    const container = document.getElementById('add-task-container');
+    container.innerHTML = ''; // Clear previous form
+    document.getElementById('task-table-container').innerHTML = '';
+    document.getElementById('user-table-container').innerHTML = ''; 
+
+    try {
+        const userResponse = await fetch('/get-users', {
+            method: 'GET',
+            headers: { 'Content-Type': 'application/json' }
+        });
+
+        const users = await userResponse.json();
+
+        // Create the form
+        let formHTML = `
+            <h4>Add User Details</h4>
+            <div class="d-flex justify-content-end mb-2">
+                <button type="button" class="btn-close" id="close-add-user-form" aria-label="Close"></button>
+            </div>
+            <form id="user-form">
+                <div class="mb-3">
+                    <label for="userSelect" class="form-label">Select User</label>
+                    <select class="form-select" id="userSelect" required>
+                        <option value="">Select User</option>`;
+
+        users.forEach(user => {
+            formHTML += `<option value="${user.id}">${user.name} (ID: ${user.id})</option>`;
+        });
+
+        formHTML += `
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label"> Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="company" class="form-label">Company</label>
+                    <input type="text" class="form-control" id="company" required>
+                </div>
+                <div class="mb-3">
+                    <label for="salary" class="form-label">Salary</label>
+                    <input type="number" class="form-control" id="salary" required>
+                </div>
+                <div class="mb-3">
+                    <label for="designation" class="form-label">Designation</label>
+                    <input type="text" class="form-control" id="designation" required>
+                </div>
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" class="form-control" id="location" required>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        `;
+
+        container.innerHTML = formHTML;
+
+        // Close form button
+        document.getElementById('close-add-user-form').addEventListener('click', () => {
+            container.innerHTML = '';
+        });
+
+        // Submit handler
+        document.getElementById('user-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+    const newUser = {
+        user_id: document.getElementById('userSelect').value,
+        name: document.getElementById('name').value,
+        company: document.getElementById('company').value,
+        salary: document.getElementById('salary').value,
+        designation: document.getElementById('designation').value,
+        location: document.getElementById('location').value,
+    };
+
+    try {
+        const response = await fetch('/add-user-detail', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(newUser)
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+            alert('User detail added successfully!');
+            container.innerHTML = ''; // Clear the form
+        } else {
+            alert(result.error || 'Failed to add user detail.');
+        }
+    } catch (error) {
+        console.error('Error adding user:', error);
+        alert('Something went wrong. Please try again.');
+    }
+});
+
+    } catch (error) {
+        console.error('Error creating user form:', error);
+        container.innerHTML = "<p>Failed to load user form.</p>";
+    }
+});
+
+// show add task form and add task to the user
+document.getElementById('add-task-btn').addEventListener('click', async () => {
+    const container = document.getElementById('add-task-container');
+    container.innerHTML = ''; // Clear previous form
+    document.getElementById('task-table-container').innerHTML = '';
+    document.getElementById('user-table-container').innerHTML = '';
+
+
+    try {
+        const userResponse = await fetch('/get-users', {
+            method: 'GET',
+            headers: { 'Content-Type': 'application/json' }
+        });
+
+        const users = await userResponse.json();
+
+        
+
+        if (users.length === 0) {
+            container.innerHTML = "<p>No users available to assign tasks.</p>";
+            return;
+        }
+
+        // Create the form
+        let formHTML = `
+            <h4>Add Task</h4>
+            <div class="d-flex justify-content-end mb-2">
+                <button type="button" class="btn-close" id="close-add-task-form" aria-label="Close"></button>
+            </div>
+            <form id="task-form">
+                <div class="mb-3">
+                    <label for="userSelect" class="form-label">Assign to User</label>
+                    <select class="form-select" id="userSelect" required>
+                        <option value="">Select User</option>`;
+
+        users.forEach(user => {
+            formHTML += `<option value="${user.id}">${user.name} (ID: ${user.id})</option>`;
+        });
+
+        formHTML += `</select>
+                </div>
+                <div class="mb-3">
+                    <label for="taskTitle" class="form-label">Task Title</label>
+                    <input type="text" class="form-control" id="taskTitle" required>
+                </div>
+                <div class="mb-3">
+                    <label for="taskDesc" class="form-label">Task Description</label>
+                    <textarea class="form-control" id="taskDesc" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="taskStatus" class="form-label">Status</label>
+                    <select class="form-select" id="taskStatus">
+                        <option value="pending">Pending</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success">Add Task</button>
+            </form>
+        `;
+
+        container.innerHTML = formHTML;
+
+        // Handle close button
+        document.getElementById('close-add-task-form').addEventListener('click', () => {
+            container.innerHTML = '';
+        });
+
+        // Handle form submission
+        document.getElementById('task-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+
+console.log(document.getElementById('userSelect').value);
+
+            const newTask = {
+                users_id: document.getElementById('userSelect').value,
+                title: document.getElementById('taskTitle').value,
+                description: document.getElementById('taskDesc').value,
+                status: document.getElementById('taskStatus').value
+            };
+
+            try {
+                const response = await fetch('/add-tasks', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(newTask)
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    alert('Task added successfully!');
+                    container.innerHTML = ''; // Clear the form
+                } else {
+                    alert(result.message || 'Failed to add task.');
+                }
+            } catch (error) {
+                console.error('Error adding task:', error);
+                alert('Something went wrong. Please try again.');
+            }
+        });
+
+
+    } catch (error) {
+        console.error('Error fetching users:', error);
+        container.innerHTML = "<p>Failed to load users for task assignment.</p>";
+    }
+});
+
+
+// Logout 
+
+    const form = document.getElementById("logout-btn")
+    
+    form.addEventListener("click", async () => {
+    try {
+        const response = await fetch('/logout', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+            alert(result.message);
+            window.location.href = "/login.html";  // Redirect to login page
+        } else {
+            alert(result.message || "Logout failed. Please try again.");
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert("Logout failed. Please try again.");
+    }
+});
+
+
+</script>
+</body>
+</html>
