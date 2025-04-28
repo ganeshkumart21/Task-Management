@@ -15,7 +15,7 @@ A simple Task Management System built using **Node.js**, **JavaScript**, **MySQL
   - Admin can assign tasks to users and view tasks across all users.
 
 - **Role-Based Access Control**:
-
+        
   - Different roles (Admin, User, Manager, HR) with appropriate permissions.
 
 - **Database Integration**:
@@ -53,5 +53,5 @@ Make sure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ganeshkumart21/task-management-app.git
+   git clone https://github.com/ganeshkumart21/Task-Management.git
    ```
